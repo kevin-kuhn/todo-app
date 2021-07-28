@@ -33,11 +33,13 @@ export default class Task {
 		return this.completed ? this.activate() : this.complete()
 	}
 
-	complete() { //instance method - IMUTTABLE OBJETCS
+	complete() {
+		//instance method - IMUTTABLE OBJETCS
 		return Task.createActive(this.id, this.description)
 	}
 
-	activate() { //instance method
+	activate() {
+		//instance method
 		return Task.createActive(this.id, this.description)
 	}
 }
