@@ -1,3 +1,6 @@
+import { faCheck } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 interface Props {
 	checked: boolean
 }
@@ -11,7 +14,7 @@ export default function Radio(props: Props) {
 		<div
 			className={`flex justify-center text-white color items-center h-7 w-7 rounded-full cursor-pointer border border-gray-400 ${gradient}`}
 		>
-			{props.checked ? "x" : ""}
+			{props.checked ? <FontAwesomeIcon size='xs' icon={faCheck} /> : ""}
 		</div>
 	)
 }

@@ -28,8 +28,8 @@ export default function List(props: Props) {
 	}
 
 	return (
-		<div className={`flex w-3/5`}>
-			<ul className={`w-full rounded-lg list-none bg-white shadow-lg`}>
+		<div className={`flex w-3/5 items-start relative`}>
+			<ul className={`absolute -top-14 w-full rounded-lg list-none bg-white shadow-lg`}>
 				{renderTasks()}
 				<FooterList tasks={tasks} onChange={onChange}/>
 			</ul>

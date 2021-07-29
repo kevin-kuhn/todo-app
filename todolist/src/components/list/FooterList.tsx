@@ -14,10 +14,10 @@ export default function FooterList({ tasks, onChange }: Props) {
 				<span className={`text-gray-300 hidden md:inline`}>
 					{tasks.quantity}
 					{tasks.quantity === 0
-						? "Nenhuma tarefa encontrada"
+						? " Nenhuma tarefa encontrada"
 						: tasks.quantity === 1
-						? "Tarefa encontrada"
-						: "Tarefas Encontradas"}
+						? " Tarefa encontrada"
+						: " Tarefas Encontradas"}
 				</span>
 				<span className={`flex-1 hidden lg:inline`}></span>
 			</>

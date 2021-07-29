@@ -4,6 +4,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+			//bg-img-tiririca
+			backgroundImage: theme => ({
+				'img-tiririca': "url('/images/tiririca.jpg')"
+			}),
 			fontFamily: {
 				'poppins': ['Poppins', 'sans-serif'],
 		 }

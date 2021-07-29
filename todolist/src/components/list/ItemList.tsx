@@ -1,4 +1,5 @@
-import Radio from "./radio"
+import React from "react"
+import Radio from "./Radio"
 
 interface Props {
 	value: string
