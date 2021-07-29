@@ -74,7 +74,7 @@ export default class TasksList {
 	}
 
 	removeCompleted(): TasksList {
-		const actives = this.#all.filter(task => task.completed)
+		const actives = this.#all.filter(task => !task.completed)
 
 		return new TasksList(actives, FilterType.NONE)
 	}

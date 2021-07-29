@@ -1,0 +1,2 @@
+TAILWIND
+	"hidden sm:inline" -> Esconda, mas a partir do small, coloque o display inline -> mobile first

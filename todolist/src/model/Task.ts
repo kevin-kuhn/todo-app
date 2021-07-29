@@ -13,7 +13,7 @@ export default class Task {
 		return new Task(id, description)
 	}
 
-	static createConcluded(id: number, description: string) {
+	static createComplete(id: number, description: string) {
 		return new Task(id, description, true)
 	}
 
@@ -35,7 +35,7 @@ export default class Task {
 
 	complete() {
 		//instance method - IMUTTABLE OBJETCS
-		return Task.createActive(this.id, this.description)
+		return Task.createComplete(this.id, this.description)
 	}
 
 	activate() {
