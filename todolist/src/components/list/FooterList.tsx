@@ -63,7 +63,7 @@ export default function FooterList({ tasks, onChange }: Props) {
 	}
 
 	return (
-		<li className={`flex p-5`}>
+		<li className={`flex p-5 flex-wrap justify-center lg:flex-nowrap lg:justify-start`}>
 			{renderItemsQuantity()}
 			{renderFilterButtons()}
 			{renderRemoveCompleted()}
